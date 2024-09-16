@@ -17,5 +17,15 @@ class Quote(models.Model):
     ) 
     category = models.CharField(choices=CATEGORY_CHOICES)
     verified = models.BooleanField(default=False)
- 
+    created_on = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        ordering = ["-created_on"]
+
+    def __str__(self):
+        return f"{self.author} quote | added by {self.added_by}"
+
+
+
+   
 
