@@ -1,4 +1,30 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
 
-/* Header styles */
+/* Header */
+img.logo {
+    max-width: 50%;
+    height: auto;
+}    
+.navbar {
+    background-color: #fffaeb !important;
+    box-shadow: 1px -1px 7px 0 #ac663e;
+    border: 1px solid #ac663e;
+    flex-wrap: nowrap;
+}
+.navbar-brand {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-item {
+    padding: 0px 20px;
+    box-shadow: 1px -1px 7px 0 #ac663e;
+    border: 1px solid #ac663e;
+    margin: 0px 30px;
+    color: #332219; 
+    font-family: 'Montserrart', sans-serif;
+    font-size: 130%; 
+    white-space: nowrap;
+}
+  
