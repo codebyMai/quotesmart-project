@@ -1,5 +1,10 @@
 {% load static %}
 
+{% url 'about' as about_url %}
+{% url 'account_login' as login_url %}
+{% url 'account_signup' as signup_url %}
+{% url 'account_logout' as logout_url %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +18,10 @@
 </head>
 <body>
     {% include 'includes/header.html' %}
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
     {% include 'includes/footer.html' %}
 </body>
 </html>

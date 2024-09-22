@@ -11,6 +11,18 @@
           <!-- Navigation -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav" class="d-flex justify-content-center">
+              {% if user.is_authenticated %}
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quotes</a>
+              </li>  
+              <li class="nav-item">
+                  <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" 
+                  href="{% url 'account_logout' %}">Logout</a>
+              </li>
+              {% else %}
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
               </li>
@@ -18,11 +30,15 @@
                 <a class="nav-link" href="#">Quotes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sign up</a>
+                <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+                    href="{% url 'account_signup' %}">Register</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Log in</a>
+              <li class="nav-item"></li>
+                <a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" 
+                href="{% url 'account_login' %}">Login</a>
               </li>
+              
+            {% endif %}
             </ul>
           </div>
         </div>
