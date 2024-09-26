@@ -14,6 +14,12 @@ main {
     flex: 10 auto;
     background-color: #fffaeb;
 }
+h1, h2, h3 {
+    color: #ac663e; 
+    font-family: 'Montserrart', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
 
 /* Header */
 img.logo {
@@ -62,3 +68,19 @@ footer {
     list-style-type: none;
 }
 
+/* Home */
+
+/*  .home-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+} */
+.home-txt {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: #332219; 
+    font-family: 'Special Elite', sans-serif;
+}
