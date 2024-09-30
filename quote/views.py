@@ -6,10 +6,11 @@ from .forms import QuoteForm
 
 # Create your views here 
     
-class QuoteList(generic.ListView):
-    queryset = Quote.objects.filter(verified=True)
+class Quotes(ListView):
+    #queryset = Quote.objects.filter(verified=True)
     template_name = "quote/quotes.html"
-    paginate_by = 6 
+    model = Quote
+    context_object_name = 'quotes'
 
 class AddQuote(CreateView):
     template_name = 'quote/add_quote.html'

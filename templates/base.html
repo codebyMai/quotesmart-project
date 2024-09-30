@@ -16,7 +16,7 @@
     {% endblock %}
     <title>Quotesmart - {% block title %}{% endblock %}</title>
 </head>
-<body>
+<body id="bg" aria-label = "paper texture" style="background-image: url('{% static "images/background.webp"%}')";>
     {% include 'includes/header.html' %}
     <main>
         {% block content %}

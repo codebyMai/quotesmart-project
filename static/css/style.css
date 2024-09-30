@@ -12,13 +12,23 @@ body {
 }
 main {
     flex: 10 auto;
-    background-color: #fffaeb;
+    
 }
 h1, h2, h3 {
     color: #ac663e; 
     font-family: 'Montserrart', sans-serif;
     text-align: center;
     padding: 20px;
+}
+.button {
+    padding: 10px 40px;
+    box-shadow: 1px -1px 7px 0 #ac663e;
+    border: 1px solid #ac663e;
+    margin: 0px 30px;
+    color: #332219; 
+    background-color: #fffaeb;
+    font-family: 'Montserrart', sans-serif;
+    font-size: 130%;      
 }
 
 /* Header */
@@ -70,17 +80,25 @@ footer {
 
 /* Home */
 
-/*  .home-img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-    padding: 20px;
-} */
 .home-txt {
     text-align: center;
     padding: 20px;
     font-size: 20px;
     color: #332219; 
     font-family: 'Special Elite', sans-serif;
+}
+/*Quotes*/
+#bg {
+    background-size: 1800px 900px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+.blockquote {
+    font-size: 20px;
+    color: #332219; 
+    font-family: 'Special Elite', sans-serif;
+}
+.quotes {
+    padding: 20px;
 }

@@ -1,9 +1,10 @@
 from django.urls import path
 from . import views
-from .views import QuoteList, AddQuote
+from .views import Quotes, AddQuote
 
 urlpatterns = [
-    path('', QuoteList.as_view(), name='quote'),
+    #path('', Quotes.as_view(), name='quotes'),
+    path('quote/', Quotes.as_view(), name= 'quotes'),
     path('add/', AddQuote.as_view(), name='add_quote'),
 ] 
 

@@ -16,7 +16,7 @@
                 <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'quote' %}">Quotes</a>
+                <a class="nav-link" href="{% url 'quotes' %}">Quotes</a>
               </li>  
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'add_quote' %}">Add Quote</a>
@@ -31,7 +31,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="{% url 'quote' %}">Quotes</a>
+                <a class="nav-link" aria-current="page" href="{% url 'quotes' %}">Quotes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
