@@ -7,7 +7,7 @@ class Quote(models.Model):
     author = models.CharField(max_length=200)
     source = models.CharField(max_length=200)
     added_by = models.ForeignKey(
-        User, on_delete=models.CASCADE)
+        User, related_name = 'quote_owner', on_delete=models.CASCADE)    
     CATEGORY_CHOICES = (
         ('Li', 'Life'),
         ('Na', 'Nature'),
@@ -24,3 +24,4 @@ class Quote(models.Model):
 
     def __str__(self):
         return f"{self.author} quote | added by {self.added_by}"
+

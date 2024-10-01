@@ -6,8 +6,8 @@
 {% block content %} 
     <div class="row">
         <div class="col-md-6" class="justify-content-center">
-            <h2 class="quote-title">New Quotes</h2>
-                {% for quote in quotes %} 
+            <h2 class="quote-title">Quote</h2>
+            
                     <div class="quotes">
                         <blockquote class="blockquote">
                         <p>{{quote.content}}</p>
@@ -16,13 +16,20 @@
                         <figcaption class="blockquote-footer">
                         {{quote.author}}<cite title="Source Title">{{quote.source}}</cite>
                         </figcaption>
+                        
+                        <div class="card-footer text-muted">
+                            <a href="{% url 'edit-quote' quote.pk %}"   
+                            class="button">Edit</a>
+                        </div>
+    
                     </div>     
                 {% endfor %}
         </div>
-
-        <div class="col-md-6">
-            <img src="{% static 'images/hero.webp' %}" class="img-fluid" class="home-img" alt="photo of glasses resting on an open book">
-        </div>
     </div>
+
+    <div class="col-md-6">
+        <img src="{% static 'images/hero.webp' %}" class="img-fluid" class="home-img" alt="photo of glasses resting on an open book">
+    </div>
+</div>
 </body>
 {% endblock %}

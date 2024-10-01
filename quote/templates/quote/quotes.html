@@ -6,16 +6,17 @@
 {% block content %} 
     <div class="row">
         <div class="col-md-6" class="justify-content-center">
-            <h2 class="quote-title">New Quotes</h2>
-                {% for quote in quotes %} 
+            <h2 class="quote-title">Quotes</h2>
+                {% for quote in quotes %}
                     <div class="quotes">
                         <blockquote class="blockquote">
                         <p>{{quote.content}}</p>
                         </blockquote>
-                              
-                        <figcaption class="blockquote-footer">
-                        {{quote.author}}<cite title="Source Title">{{quote.source}}</cite>
-                        </figcaption>
+                        <div>
+                            <a href="{% url 'quote-detail' quote.pk %}"   
+                            class="button">Details</a>
+                        </div>
+    
                     </div>     
                 {% endfor %}
         </div>
