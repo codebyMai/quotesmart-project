@@ -13,14 +13,12 @@
                         <p>{{quote.content}}</p>
                         </blockquote>
                         <div>
-                            <a href="{% url 'quote-detail' quote.pk %}"   
+                            <a href="{% url 'detail-quote' quote.pk %}"   
                             class="button">Details</a>
                         </div>
-    
                     </div>     
                 {% endfor %}
         </div>
-
         <div class="col-md-6">
             <img src="{% static 'images/hero.webp' %}" class="img-fluid" class="home-img" alt="photo of glasses resting on an open book">
         </div>
