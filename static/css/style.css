@@ -21,14 +21,18 @@ h1, h2, h3 {
     padding: 20px;
 }
 .button {
-    padding: 10px 40px;
+    padding: 10px 30px;
     box-shadow: 1px -1px 7px 0 #ac663e;
     border: 1px solid #ac663e;
     margin: 0px 30px;
     color: #332219; 
     background-color: #fffaeb;
     font-family: 'Montserrart', sans-serif;
-    font-size: 130%;      
+    font-size: 110%; 
+    text-decoration: none;   
+}
+.button:hover {
+    box-shadow: 4px -4px 8px 0 #ac663e;
 }
 
 /* Header */
@@ -101,4 +105,18 @@ footer {
 }
 .quotes {
     padding: 20px;
+}
+.blockquote-footer {
+    font-size: 16px;
+    color: #332219; 
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 50px; 
+}
+.quotes-detail {
+    padding-top: 40px;
+    font-size:30px;
+}
+
+.btn-group {
+    margin-top: 20px;
 }

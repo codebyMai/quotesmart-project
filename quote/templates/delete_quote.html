@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}Delete Quote{% endblock %} 
+
+{% block content %}
+<div class="container">
+    <form method="POST" enctype="multipart/form-data" class="p-2 form">
+        <h1 class="text-center">Delete Quote</h1>
+        {% csrf_token %}
+        <!--{{ form.media }} -->
+        {{ form|crispy }}
+        <div class="text-center">
+            <strong>Are you sure you want to delete this post?</strong>
+            <button type="submit" class="button">Delete Quote</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

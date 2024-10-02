@@ -4,23 +4,32 @@
 {% block title %}Quotes{% endblock %} 
 
 {% block content %}
-<body>
-    <div class="row"></div>
-        <div class="col-md-6" class="justify-content-center">
-            <div class="quotes">
-                <blockquote class="blockquote">
-                    <p>{{quote.content}}</p>
-                </blockquote>
+    <div class="text-center">
+        <div>
+            <blockquote class="blockquote">
+                <p class="quotes-detail">{{quote.content}}</p>
+            </blockquote>
                               
-                <figcaption class="blockquote-footer">
-                    {{quote.author}}<cite title="Source Title">{{quote.source}}</cite>
-                </figcaption>
-            </div> 
-            <div>
-                <a href="{% url 'edit-quote' quote.pk %}"   
-                class="button">Edit</a>
+            <figcaption class="blockquote-footer" class="fw-bolder" >
+                {{quote.author}}
+                <cite title="Source Title">{{quote.source}}</cite>
+            </figcaption>    
+            <hr>
+            <p class="mb-20"> Added by {{quote.added_by}}</p>
+            <hr>   
+            
+            
+        </div>
+        {% if user.id == quote.added_by.id %}
+            <div class="btn-group">
+                <div>
+                    <a href="{% url 'edit-quote' quote.pk %}" class="button">Edit</a>
+                <br>
+                </div>
+                <div>
+                    <a href="{% url 'delete-quote' quote.pk %}" class="button">Delete</a>
+                </div>
             </div>
-
-    </div>  
-</body>
+        {% endif %}     
+    </div>          
 {% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock %} 
+
+{% block content %} 
+    <div class="container text-center">
+        <h1>404 Error</h1>
+        <p>You have lost your way!</p>
+        <a href="{% url 'home' %}" class="button">Go back</a>
+    </div>
+{% endblock %}
