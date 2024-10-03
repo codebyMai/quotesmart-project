@@ -20,10 +20,10 @@ body {
     flex-direction: column;
    
 }
-main {
+/*main {
     flex: 10 auto;
 
-}
+}*/
 h1, h2, h3 {
     color: #ac663e; 
     font-family: 'Montserrart', sans-serif;
@@ -80,15 +80,21 @@ li {
     flex-wrap: nowrap;
     color: #332219; 
     font-family: 'Montserrart', sans-serif;
+   
 }
-.nav-item {
+
+#navbarNav {
+    display: block;
+}
+
+/*.nav-item {
     padding: 0px 20px;
     box-shadow: 1px -1px 7px 0 #ac663e;
     border: 1px solid #ac663e;
     margin: 0px 30px;
     font-size: 120%; 
     white-space: nowrap;
-}
+}*/
 
 
 /* Footer */
@@ -150,3 +156,5 @@ footer {
 .btn-group {
     margin-top: 20px;
 }
+
+

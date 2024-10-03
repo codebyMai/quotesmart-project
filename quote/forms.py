@@ -9,6 +9,5 @@ class QuoteForm(forms.ModelForm):
         fields = ('content',
                   'author',
                   'source',
-                  'category',
-                  'added_by')
+                  'category')
         
