@@ -2,15 +2,15 @@
 
 <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" class="w-100 p-3">
-     
           <!-- Logo -->  
-          <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt="Quote Smart Logo" class="logo"></a>
+          <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo.webp' %}" alt="Quote Smart Logo" class="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <!-- Navigation -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+              <!--Navbar for logged in user-->
               {% if user.is_authenticated %}
               <li class="nav-item">
                 <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}"
@@ -28,7 +28,7 @@
                   <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" 
                   href="{% url 'account_logout' %}">Logout</a>
               </li>
-            
+             <!--Navbar for unregistered user-->
               {% else %}
               <li class="nav-item">
                 <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}"
@@ -43,10 +43,8 @@
                 href="{% url 'account_login' %}">Login</a>
               </li>
             </ul>  
-            {% endif %}
-          
-                
+            {% endif %}  
           </div>
-        </div>
+
       </nav>
 </header>
