@@ -1,18 +1,28 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap');
 
-html, body {
-    height: 100%
+/* reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
+html { 
+    margin: 0; 
+    height: 100%; 
+    width: 100%;
+}
 body {
+    margin: 0; 
+    min-height: 100%; 
+    width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+   
 }
 main {
     flex: 10 auto;
-    
+
 }
 h1, h2, h3 {
     color: #ac663e; 
@@ -24,40 +34,58 @@ h1, h2, h3 {
     padding: 10px 30px;
     box-shadow: 1px -1px 7px 0 #ac663e;
     border: 1px solid #ac663e;
-    margin: 0px 30px;
+    margin: 20px 30px;
     color: #332219; 
     background-color: #fffaeb;
     font-family: 'Montserrart', sans-serif;
-    font-size: 110%; 
-    text-decoration: none;   
+    font-size: 100%; 
+    text-decoration: none;      
 }
 .button:hover {
     box-shadow: 4px -4px 8px 0 #ac663e;
 }
+button {
+    padding: 10px 30px;
+    box-shadow: 1px -1px 7px 0 #ac663e;
+    border: 1px solid #ac663e;
+    margin: 20px 30px;
+    color: #332219; 
+    background-color: #fffaeb;
+    font-family: 'Montserrart', sans-serif;
+    font-size: 100%; 
+    text-decoration: none;   
+}
+button:hover {
+    box-shadow: 4px -4px 8px 0 #ac663e;
+}*/
+.log-info {
+    font-size: 15px;
+    color: #ac663e; 
+    font-family: 'Special Elite', sans-serif;
+}
+li {
+    list-style-type: none;
+} 
 
 /* Header */
-img.logo {
-    max-width: 50%;
-    height: auto;
-}    
+
+/*header {
+    width: 100dvw;
+    height:auto
+} */
 .navbar {
     background-color: #fffaeb !important;
     box-shadow: 1px -1px 7px 0 #ac663e;
     border: 1px solid #ac663e;
     flex-wrap: nowrap;
+    color: #332219; 
+    font-family: 'Montserrart', sans-serif;
 }
-.navbar-brand {
-    max-width: 100%;
-    height: auto;
-}
-
 .nav-item {
     padding: 0px 20px;
     box-shadow: 1px -1px 7px 0 #ac663e;
     border: 1px solid #ac663e;
     margin: 0px 30px;
-    color: #332219; 
-    font-family: 'Montserrart', sans-serif;
     font-size: 130%; 
     white-space: nowrap;
 }
@@ -65,7 +93,7 @@ img.logo {
 
 /* Footer */
 footer {
-    margin-top: auto;
+    /*margin-top: auto;*/
     background-color: #fffaeb;
     box-shadow: 1px -1px 7px 0 #ac663e;
     border: 1px solid #ac663e;
@@ -90,10 +118,12 @@ footer {
     font-size: 20px;
     color: #332219; 
     font-family: 'Special Elite', sans-serif;
+    word-wrap: break-word;
 }
+
 /*Quotes*/
 #bg {
-    background-size: 1800px 900px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;

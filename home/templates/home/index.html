@@ -12,9 +12,26 @@
         <div class="row">
             <div class="col-md-6" class="justify-content-center">
                 <h2 class="home-title">Welcome to QuoteSmart!</h2>
+                {% if user.is_authenticated %}
                 <p class="home-txt">
-                    
+                Hello {{ user }}! <br>
+                <br>
+                You can browse quotes in our database. <br>
+                <a href="{% url 'quotes' %}" class="button" role="button" aria-pressed="true">Quotes</a><br>
+                <br>
+                Or maybe you would rather add some quotes of your own?<br> 
+                <a href="{% url 'add_quote' %}" class="button" role="button" aria-pressed="true">Add</a></p>
+                
+                {% else %}
+                <p class="home-txt">
+                One place to store all your favourite literary quotes. No more endless internet searches for the right quote. With QuoteSmart you can simply add your favourite quotes and find them whenever you need them with a click of a button. 
+                <br>
+                Register today and become QuoteSmart. 
                 </p>
+                <a href="{% url 'account_signup' %}" class="button" role="button" aria-pressed="true">Register now!</a>
+                {% endif %}
+                    
+                
             </div>
             <div class="col-md-6">
                 <img src="{% static 'images/hero.webp' %}" class="img-fluid" class="home-img" alt="photo of glasses resting on an open book">
