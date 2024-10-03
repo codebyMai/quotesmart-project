@@ -38,7 +38,7 @@ h1, h2, h3 {
     color: #332219; 
     background-color: #fffaeb;
     font-family: 'Montserrart', sans-serif;
-    font-size: 100%; 
+    font-size: 90%; 
     text-decoration: none;      
 }
 .button:hover {
@@ -52,7 +52,7 @@ button {
     color: #332219; 
     background-color: #fffaeb;
     font-family: 'Montserrart', sans-serif;
-    font-size: 100%; 
+    font-size: 90%; 
     text-decoration: none;   
 }
 button:hover {
@@ -86,7 +86,7 @@ li {
     box-shadow: 1px -1px 7px 0 #ac663e;
     border: 1px solid #ac663e;
     margin: 0px 30px;
-    font-size: 130%; 
+    font-size: 120%; 
     white-space: nowrap;
 }
 

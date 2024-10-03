@@ -17,10 +17,12 @@
                 Hello {{ user }}! <br>
                 <br>
                 You can browse quotes in our database. <br>
-                <a href="{% url 'quotes' %}" class="button" role="button" aria-pressed="true">Quotes</a><br>
+                <br>
+                <a href="{% url 'quotes' %}" class="button">Quotes</a><br>
                 <br>
                 Or maybe you would rather add some quotes of your own?<br> 
-                <a href="{% url 'add_quote' %}" class="button" role="button" aria-pressed="true">Add</a></p>
+                <br>
+                <a href="{% url 'add_quote' %}" class="button">Add</a></p>
                 
                 {% else %}
                 <p class="home-txt">
@@ -28,7 +30,7 @@
                 <br>
                 Register today and become QuoteSmart. 
                 </p>
-                <a href="{% url 'account_signup' %}" class="button" role="button" aria-pressed="true">Register now!</a>
+                <a href="{% url 'account_signup' %}" class="button">Register now!</a>
                 {% endif %}
                     
                 
