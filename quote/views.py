@@ -2,11 +2,12 @@ from django.views import generic
 from django.views.generic import (
     CreateView, ListView, DetailView, DeleteView, UpdateView)
 
+
 from .models import Quote
 from .forms import QuoteForm
 
 # Create your views here 
-    
+   
 class Quotes(ListView):
     """List of quotes view"""
     template_name = "quote/quotes.html"
