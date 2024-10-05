@@ -3,6 +3,7 @@
 
 # QuoteSmart
 QuoteSmart is designed for literary quotes aficionados. No more searching for that one quote among piles of notes and random books. With QuoteSmart you can store all your favourite quotes in one place and access them at a click of a button.
+
 ![Mood](docs/readme/hero-img.webp)
 
 [Live Website](https://quotesmart-project-b900b8055e93.herokuapp.com/)
@@ -42,34 +43,37 @@ The visual aspects of the website were carefully chosen to convey the atmosphere
 
 ### Font
 I used fonts from GoogleFonts. I have chosen Montserrat for it's clean, elegant look and Special Elite for the resemblance to traditional typewriter print to stand out on the background of old yellowed paper. 
+
 ![ExampleFont](docs/readme/fonts.webp)
 
 ### Colour
 
 The colour scheme is simple, consisting 3 earthy tones complementing hero image.
+
 ![ColourScheme](docs/readme/collage.webp)
 
 ### Logo
 
 I have created the logo in [Canva](www.canva.com) to match the mood of the website.
+
 ![Logo](docs/readme/logo.webp)
 
 
 ### Wireframes
 
   - Homepage/s
-  ![Homepage1](docs/wf-home.png)
+  ![Homepage](docs/readme/wf-home.png)
 
   - Quotes
-  ![Quotes](docs/wf-quotes.png)
+  ![Quotes](docs/readme/wf-quotes.png)
   
   - Detailed Quotes
-  ![Detail](docs/wf-detail.png)
+  ![Detail](docs/readme/wf-detail.png)
 
 
 ### Model
 
-  ![Homepage1](docs/quote-model.png)
+  ![Homepage1](docs/readme/quote-model.png)
 
 
 ## Development
@@ -132,15 +136,15 @@ __Home__
 - It has two versions depending on user being logged in. 
 - Unregistered user is encouraged to registered and logged in user is greeted by the username and encouraged to browse or add quotes.
 
-  ![Home 1](docs/features/home-logged.webp)
-  ![Home 2](docs/features/home-unlogged.webp)
+  ![Home 1](docs/readme/home-logged.webp)
+  ![Home 2](docs/readme/home-unlogged.webp)
 
 __Quotes__
 - Displays a list of four quotes.
 - Users can move back and forth between the lists of quotes using buttons on the bottom of the page.
 - There is a button under each quote which gives user access to details of the quote.
 
-  ![Home 1](docs/features/quotes-list.webp)
+  ![Home 1](docs/readme/quotes-list.webp)
 
 __Quotes Details__
 - Chosen quote is prominently displayed with info about he author an the source below.
@@ -175,7 +179,7 @@ __Footer__
 __Register Page__
 - If users do not have an account they will be brought to a sign up page where they can create an account.
  
-![Register](docs/readme/signup.png)
+![Register](docs/readme/signup.webp)
 
 __Log In Page__
 - Registered users can log in to their acounts.
@@ -188,7 +192,7 @@ __Log out page__
  ![LogOut](docs/readme/logout.webp)
 
 __Page 404__
- ![404](docs/readmeg/404.webp)
+ ![404](docs/readme/404.webp)
 
 
 
@@ -244,35 +248,31 @@ I also utilised Google Chrome Dev tools to test it on an Ipad and it was working
 
 - Python passed through Code Institute Linter without issues:
 
-(docs/readme/python1.webp)
 
-(docs/readme/python2.webp)
-
-(docs/readme/python3.webp)
-
-(docs/readme/python4.webp)
-
-(docs/readme/python5.webp)
-
-(docs/readme/python6.webp)
+![Python1](docs/readme/python1.webp)
+![Python2](docs/readme/python2.webp)
+![Python3](docs/readme/python3.webp)
+![Python4](docs/readme/python4.webp)
+![Python5](docs/readme/python5.webp)
+![Python6](docs/readme/python6.webp)
 
 - CSS validated with  Jigsaw CSS Validator:
 
-(docs/readme/css1.webp)
-
-(docs/readme/css2.webp)  
+![CSS1](docs/readme/css1.webp)
+![CSS2](docs/readme/css2.webp)  
 
 - HTML validated with Rocketvalidator - it was more convenient to use than the W3C one due to the inclusions of Java Script among HTML.
 It returned 4 errors and 4 warnings. All warnings were related to "possible misuse of aria-label in the context of paper texture background.
 All 4 errors were caused by the code on Allauth pages.
 
-(docs/readme/html1.webp) 
-(docs/readme/html2.webp) 
-(docs/readme/html3.webp) 
-(docs/readme/html4.webp) 
-(docs/readme/html5.webp) 
-(docs/readme/html6.webp) 
-(docs/readme/html7.webp) 
+![HTML1](docs/readme/html1.webp)
+![HTML2](docs/readme/html2.webp)
+![HTML3](docs/readme/html3.webp)
+![HTML4](docs/readme/html4.webp)
+![HTML5](docs/readme/html5.webp)
+![HTML6](docs/readme/html6.webp)
+![HTML7](docs/readme/html7.webp)
+
 
 ### Manual Testing
 
@@ -332,27 +332,24 @@ I created a separate file to outline the deployment process as it was too long t
 
 ### Content 
 
-- The format and template for the README file was borrowed from the Code institute [https://codeinstitute.net/ie/]
+- The format and template for the README file was borrowed from the [Code institute](https://codeinstitute.net/ie/)
 
 - The images were taken from [Pixabay](https://www.pixabay.com/) 
 
-- The image conversions from png to webp were done with [Picflow](https://picflow.com]
+- The image conversions from png to webp were done with [Picflow](https://picflow.com)
 
 - The code for the navbar was taken from [Bootstrap](https://getbootstrap.com/docs/5.0/components/navbar/)
 
+- [Code Institute Django walkthrough](https://learn.codeinstitute.net/) served as a point of inspiration and reference and helped me on many occasion 
 
-### Helpful resources and credits
+- Invaluable help with virtual environment and Django by [Dee Mac](https://www.youtube.com/@IonaFrisbee)
 
-- Code Institute Django walkthrough served as a point of inspiration and reference and helped me on many occasions [
+- Issues with [Bootstrap Navbar](https://www.youtube.com/@ByteGrad)
 
-- Invaluable help with virtual environment and Django [https://www.youtube.com/@IonaFrisbee]
+- [Avoiding overcomplicating things](https://www.youtube.com/@Codemycom)
 
-- Issues with Bootstrap Navbar [https://www.youtube.com/@ByteGrad]
+- [Use of login required on class based views](https://stackoverflow.com/questions/6069070/how-to-use-permission-required-decorators-on-django-class-based-views)
 
-- Avoiding overcomplicating things [https://www.youtube.com/@Codemycom] 
+- I was referring a lot to Django Documentation (https://docs.djangoproject.com/en/5.1/releases/4.2/), StackOverflow (https://stackoverflow.com/), W3Schools (https://www.w3schools.com/) 
 
-- Use of login required on class based views [https://stackoverflow.com/questions/6069070/how-to-use-permission-required-decorators-on-django-class-based-views]
-
-- I was referring a lot to Django Documentation [https://docs.djangoproject.com/en/5.1/releases/4.2/], StackOverflow [https://stackoverflow.com/], W3Schools [https://www.w3schools.com/] 
-
-and Visual Studio Docks [https://code.visualstudio.com/docs]
+and [Visual Studio Docks](https://code.visualstudio.com/docs)
