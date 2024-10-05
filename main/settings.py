@@ -33,7 +33,8 @@ DEBUG = False
 ALLOWED_HOSTS = ['.herokuapp.com',
                  'localhost',
                  '0.0.0.0',
-                 '127.0.0.1',]
+                 '127.0.0.1',
+                 '*']
 
 
 # Application definition
@@ -164,8 +165,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static') ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
 
 # Cloudinary Settings
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'

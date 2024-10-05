@@ -13,12 +13,11 @@
     
      <!--favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
-    <link rel="icon"  type="image/png" sizes="32x32" href="static/.favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png"sizes="16x16" href="static/favicon/favicon-16x16.png">
+    <link rel="icon"  sizes="32x32" href="static/.favicon/favicon-32x32.png">
+    <link rel="icon"  sizes="16x16" href="static/favicon/favicon-16x16.png">
     
-
     {% block extra_css %}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="{% static '/css/style.css' %}">
     {% endblock %}
 
@@ -28,12 +27,14 @@
 
     <title>Quotesmart{% block title %}{% endblock %}</title>
 </head>
-<body id="bg" aria-label="paper texture" style="background-image: url('{% static "images/background.webp"%}')";>
+<body id="bg" aria-label="paper texture" style="background-image: url('{% static "images/background.webp"%}')">
     {% include 'includes/header.html' %}
-    <main class="text-center"">
+    <main>
+        <div id="center">
         {% block content %}
 
         {% endblock %}
+        </div>
     </main>
     {% include 'includes/footer.html' %}
 </body>

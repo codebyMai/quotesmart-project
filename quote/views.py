@@ -6,8 +6,9 @@ from django.views.generic import (
 from .models import Quote
 from .forms import QuoteForm
 
-# Create your views here 
-   
+# Create your views here
+
+
 class Quotes(ListView):
     """List of quotes view"""
     template_name = "quote/quotes.html"
@@ -15,10 +16,12 @@ class Quotes(ListView):
     context_object_name = 'quotes'
     paginate_by = 4
 
+
 class DetailQuote(DetailView):
     """Detailed quote view"""
     model = Quote
     template_name = 'quote_detail.html'
+
 
 class AddQuote(CreateView):
     """Add quote view"""
@@ -31,12 +34,14 @@ class AddQuote(CreateView):
         form.instance.added_by = self.request.user
         return super(AddQuote, self).form_valid(form)
 
+
 class EditQuote(UpdateView):
     """Edit Quote"""
     model = Quote
     template_name = 'edit_quote.html'
     fields = ['content', 'author', 'source', 'category']
     success_url = '/quote/'
+
 
 class DeleteQuote(DeleteView):
     """Delete Quote"""
