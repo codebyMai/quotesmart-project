@@ -70,13 +70,13 @@ li {
     flex-wrap: nowrap;
     color: #332219; 
     font-family: 'Montserrart', sans-serif;
-} */
+} 
 #navbarNav {
     display: block;
     background-color: #fffaeb !important; 
 }
-a.nav-link {
-    padding: 7px 30px;
+.nav-item {  
+     padding: 7px 30px;
     box-shadow: 1px -1px 7px 0 #ac663e;
     border: 1px solid #ac663e;
     margin: 0px 40px;

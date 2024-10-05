@@ -76,13 +76,14 @@ li {
     background-color: #fffaeb !important; 
 }
 .nav-item {  
-     padding: 7px 30px;
+    padding: 5px 20px;
     box-shadow: 1px -1px 7px 0 #ac663e;
     border: 1px solid #ac663e;
     margin: 0px 40px;
     font-size: 120%; 
     white-space: nowrap;
 }
+
 /* Footer */
 footer {
     background-color: #fffaeb;
@@ -121,6 +122,7 @@ footer {
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;
+}    
     
 .blockquote {
     font-size: 20px;
