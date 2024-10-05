@@ -350,6 +350,6 @@ I created a separate file to outline the deployment process as it was too long t
 
 - [Use of login required on class based views](https://stackoverflow.com/questions/6069070/how-to-use-permission-required-decorators-on-django-class-based-views)
 
-- I was referring a lot to Django Documentation (https://docs.djangoproject.com/en/5.1/releases/4.2/), StackOverflow (https://stackoverflow.com/), W3Schools (https://www.w3schools.com/) 
+- I was referring a lot to [Django Documentation](https://docs.djangoproject.com/en/5.1/releases/4.2/), [StackOverflow](https://stackoverflow.com/), [W3Schools](https://www.w3schools.com/) 
 
 and [Visual Studio Docks](https://code.visualstudio.com/docs)
